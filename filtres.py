@@ -89,6 +89,15 @@ class RedbLUE(BaseFiltre):
         return red
         return green
         return blue
+class OgrAnche(BaseFiltre):
+    def __init__(self):
+        super().__init__()
+        self.name="цвета"
+        self.description="убирает зеленый,синий и красный цвет!"
+    def apply(self,image:Image):
+        img_gray = (image.convert("L"))
+        edges = img_gray.filter(ImageFilter.FIND_EDGES)
+        edges.show()
 class FiltreRepo:
     def __init__(self):
         self.repo={
@@ -99,7 +108,10 @@ class FiltreRepo:
             "4":{"name":Upheaval90().name,"derict":Upheaval90().description,"instance":Upheaval90()},
             "5":{"name":Сhangingthekey().name,"derict":Сhangingthekey().description,"instance":Сhangingthekey()},
             "6":{"name":RedbLUE().name,"derict":RedbLUE().description,"instance":RedbLUE()},
+            "7":{"name":OgrAnche().name,"derict":OgrAnche().description,"instance":OgrAnche()},
             ".":{"name":EasterEgg().name,"derict":EasterEgg().description,"instance":EasterEgg()}}
+
+
 
 
 
