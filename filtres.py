@@ -17,8 +17,6 @@ class BlackwiteFiltres(BaseFiltre):
         self.description="Преобразует изображение к изображение,состоящего из 2 цветов:Белого и Черного"
     def apply(self,image:Image):
         return image.convert("L")
-
-
 class LumosFiltres(BaseFiltre):
     def __init__(self):
         super().__init__()
@@ -101,14 +99,14 @@ class OgrAnche(BaseFiltre):
 class FiltreRepo:
     def __init__(self):
         self.repo={
-            "0":{"name":BlackwiteFiltres().name,"derict":BlackwiteFiltres().description,"instance":BlackwiteFiltres()},
-            "1":{"name":LumosFiltres().name,"derict":LumosFiltres().description,"instance":LumosFiltres()},
-            "2":{"name":Noch().name,"derict":Noch().description,"instance":Noch()},
-            "3":{"name":Upheaval90().name,"derict":Upheaval90().description,"instance":Upheaval90()},
+            "1":{"name":BlackwiteFiltres().name,"derict":BlackwiteFiltres().description,"instance":BlackwiteFiltres()},
+            "2":{"name":LumosFiltres().name,"derict":LumosFiltres().description,"instance":LumosFiltres()},
+            "3":{"name":Noch().name,"derict":Noch().description,"instance":Noch()},
             "4":{"name":Upheaval90().name,"derict":Upheaval90().description,"instance":Upheaval90()},
-            "5":{"name":Сhangingthekey().name,"derict":Сhangingthekey().description,"instance":Сhangingthekey()},
-            "6":{"name":RedbLUE().name,"derict":RedbLUE().description,"instance":RedbLUE()},
-            "7":{"name":OgrAnche().name,"derict":OgrAnche().description,"instance":OgrAnche()},
+            "5":{"name":Upheaval90().name,"derict":Upheaval90().description,"instance":Upheaval90()},
+            "6":{"name":Сhangingthekey().name,"derict":Сhangingthekey().description,"instance":Сhangingthekey()},
+            "7":{"name":RedbLUE().name,"derict":RedbLUE().description,"instance":RedbLUE()},
+            "8":{"name":OgrAnche().name,"derict":OgrAnche().description,"instance":OgrAnche()},
             ".":{"name":EasterEgg().name,"derict":EasterEgg().description,"instance":EasterEgg()}}
 
 
