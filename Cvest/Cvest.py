@@ -38,6 +38,7 @@ def cvestick(message):
     Я с радостью выбегаю и сразу впадаю вступор.
     -Когда я садился в поезд Крош ему сказал что встретит меня...Но его нету!
     Оставалось самому идти!Но куда?""",reply_markup=markup)
+    bot.send_photo(message.chat.id,"C:\Основные проекты\my_first_progect\Cvest\S6XprhVG-ks.jpg")
     audio = open(r'C:\Основные проекты\Chipi.mp3', 'rb')
     bot.send_audio(message.from_user.id, audio)
     bot.register_next_step_handler(msg, opredel)
@@ -65,6 +66,7 @@ def eshik(message):
     btn2 = types.KeyboardButton("Через окно,но домой")
     btn3 = types.KeyboardButton("К совунье")
     markup.add(btn1, btn2, btn3)
+    bot.send_photo(message.chat.id,"C:\Основные проекты\my_first_progect\Cvest\kandinsky - download - 1706030114318.png")
     bot.send_message(message.caht.id,"""
     Я подошел к дому Ежика,но свет не был включен!
     Или его нету дома или он спит-додумав решил покричать
@@ -100,6 +102,7 @@ def Vab(message):
             bot.register_next_step_handler(msg, Vab)
 def Smert(message):
     bot.send_message(message.chat.id,"Я решил его подождать!")
+    bot.send_photo(message.chat.id,"C:\Основные проекты\my_first_progect\Cvest\maxresdefault.jpg")
     bot.send_message(message.chat.id,"""
     Через 10 минут он пришел
     Но это был не ежик!Это был какой то монстр!
